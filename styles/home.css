@@ -15,7 +15,7 @@ header {
 #bg {
     grid-area: left;
 
-    background: url("/img/home-bg-img.png") no-repeat top/contain;
+    background: url("../img/home-bg-img.png") no-repeat top/contain;
 }
 
 main {
