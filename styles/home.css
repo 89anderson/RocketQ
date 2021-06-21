@@ -1,0 +1,48 @@
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%; /* divide a area em 2 colunas */
+    grid-template-rows: 11.4rem, 1fr; /*divide a áreas em 2 linhas, 1 com 11.4rem e a outra fica com o restante */
+
+    grid-template-areas: 
+    'header header'
+    'left right';
+}
+
+header {
+    grid-area: header;    
+}
+
+#bg {
+    grid-area: left;
+
+    background: url("/img/home-bg-img.svg") no-repeat top/contain;
+}
+
+main {
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+}
+
+main .container {
+    width: min(36.3rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20pxm, 5vw, 2.8rem)
+    margin-bottom: 2.4rem;
+}
+
+input {
+    border: .2rem solid var(--gray-blue);    
+    padding: 0 1.6rem;
+        
+}
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
