@@ -31,6 +31,7 @@ html {
 }
 
 body {
+    display: flex;
     height: 100vh; /* nao aplicar quando ha colagem vertical */
     background: var(--background);
 }

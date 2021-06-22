@@ -6,33 +6,33 @@
     grid-template-areas: 
     'header header'
     'left right';
+
 }
 
 header {
+    display: block;
     grid-area: header;    
 }
 
 .bg {
     grid-area: left;
-
     background: url("../img/home-bg-img.svg") no-repeat top/contain;
 }
 
 main {
     grid-area: right;
-
     display: flex;
     align-items: center;
 }
 
 main .container {
-    width: min(36.3rem 100%);
+    width: min(36.3rem, 100%);
 }
 
 main h2{
     font-family: 'Poppins', sans-serif;
     color: var(--black);
-    font-size: clamp(20pxm, 5vw, 2.8rem)
+    font-size: clamp(20pxm, 5vw, 2.8rem);
     margin-bottom: 2.4rem;
 }
 
