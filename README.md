@@ -8,4 +8,4 @@
 <br>
 <p>Acesse o Rocket-Q através do Github Pages e veja como ele está ficando <a href="https://89anderson.github.io/RocketQ/home.html?" target="_blank">AQUI!</a></p>
 <br>
-<p>O Rocket-Q é um projedo do NLW 6! @Origamid.</p>
+<p>O Rocket-Q é um projedo do NLW 6! @Rocketseat.</p>
