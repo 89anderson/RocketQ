@@ -1,6 +1,6 @@
-/* reset */
+/* reset*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -32,14 +32,16 @@ html {
 
 body {
     display: flex;
-    height: 100vh; /* nao aplicar quando ha colagem vertical */
+    height: 100vh; /* nao aplicar quando ha rolagem vertical */
     background: var(--background);
 }
 
 body, button, input, textarea {
     /* intervalo de tamanho */
     font-size: clamp(14px, 1.6rem, 2vw); /* minimo 14px, tamanho padrao 1.6 rem, tamanho para telas muito grandes(tv) */
+    
     font-family: 'Open Sans', sans-serif;
+
     /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -91,7 +93,7 @@ button:hover, .button:hover {
     filter: brightness(1.2);
 }
 
-button > img, 
+button > img 
 .button > img {
 
     margin-right: 1rem;
