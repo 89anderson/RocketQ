@@ -23,8 +23,9 @@ html {
 
     --gray-dark: #4D5E77;
     --gray-blue: #A1B2CD;
-    --gray-medium: #D3D9E2;
+    --gray-medium: #eaecf2;
     --gray-light: #E5EAF1;
+    
 
     /* 1rem = 16px (User Agent) = 100% */
     font-size: 62.5% /* = 10px */
@@ -93,7 +94,7 @@ button:hover, .button:hover {
     filter: brightness(1.2);
 }
 
-button > img 
+button > img, 
 .button > img {
 
     margin-right: 1rem;
