@@ -1,0 +1,27 @@
+{
+  "name": "RocketQ",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido durante a trilha Discover do NLW6 promivido pela Rocketseat. Este projeto visa promover interação entre o dono da página e seu publico através de perguntas.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/89anderson/RocketQ.git"
+  },
+  "keywords": [],
+  "author": "Anderson Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/89anderson/RocketQ/issues"
+  },
+  "homepage": "https://github.com/89anderson/RocketQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
