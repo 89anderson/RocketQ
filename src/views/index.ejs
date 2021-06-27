@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+    <head>
+        <title>Criar Sala - Rocket.Q</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<head>
+        <!-- View Port -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Criar sala no Rocket-Q</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/styles/global.css">
+        <link rel="stylesheet" href="/styles/home.css">
 
-    <!-- VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="home" class="content">
+            <header>
+                <a href="/">
+                    <img src="/images/logo.svg" alt="Rocket.Q Logo"/>
+                </a>
+            </header>
 
-    <!-- STYLE -->
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/home.css">
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-    <div class="content" id="home">
-
-        <header>
-            <a href="/">
-                <img src="/img/logo.svg" alt="Rocket-Q Logo">
-            </a>
-        </header>
-
-        <div id="bg" class="bg">
-            <div class="ball top"></div>
-            <div class="ball bottom"></div>
-        </div>
-
-        <main>
-            <div class="container">
-
-                <!-- VAMOS RENDERIZAR A PARTE CORRETA DE ACORDO COM A URL CORRETA -->
-
-                <%- include(`parts/${page}`) %>
+            <div id="bg">
+                <div class="ball top"></div>
+                <div class="ball bottom"></div>
             </div>
-        </main>
-
-    </div>
-
-</body>
-
+     
+            <main>
+                <div class="container">
+                    <!-- Vai renderizar a part correta de acordo com a url-->
+                    <%- include(`parts/${page}`)  %>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
