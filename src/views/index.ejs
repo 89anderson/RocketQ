@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLE -->
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/home.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,7 +26,9 @@
     <div class="content" id="home">
 
         <header>
-            <img src="img/logo.svg" alt="Rocket-Q Logo">
+            <a href="/">
+                <img src="/img/logo.svg" alt="Rocket-Q Logo">
+            </a>
         </header>
 
         <div id="bg" class="bg">
@@ -36,31 +38,10 @@
 
         <main>
             <div class="container">
-                <section>
-                    <h2>Entre como participante</h2>
-                    <form action="">
-                        <label class="sr-only" for="room-id">Código da sala</label>
-                        <input type="number" id="room-id" placeholder="Código da sala">
-                        <button>
-                            <img src="img/enter-room.svg" alt="Entre em uma sala">
-                            Entrar na sala
-                        </button>
-                    </form>
-                </section>
 
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
+                <!-- VAMOS RENDERIZAR A PARTE CORRETA DE ACORDO COM A URL CORRETA -->
 
-                <section>
-                    <h2>Crie sua própria sala de forma fácil</h2>
-                    <a href="scr/views/create-room.ejs" class="button outlined">
-                        <img src="img/create-room.svg" alt="Crie sua sala">
-                        Criar Sala
-                    </a>
-                </section>
+                <%- include(`parts/${page}`) %>
             </div>
         </main>
 
